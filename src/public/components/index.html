@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dormitest — Test del Bienestar</title>
+
+    <!-- Fuente -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap opcional (solo grid) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Tu CSS -->
+    <link rel="stylesheet" href="../css/index.css"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container">
+        <div class="brand">
+          <div class="brand-mark"><a href="index.html">
+    <img src="../images/Dormitest.png" alt="Logo Dormitest" width="100"></a>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <li><a class="btn-outline bg-primary-subtle text-black" href="./login.html">Iniciar sesión</a></li>
+          <li><a class="btn-outline" href="./registro.html">Registrarse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <img class="fondo1" src="../images/fondo-1.jpg" alt="fondo-1" />
+        <div class="hero-left">
+          <h1>
+            Descubrí cómo tus hábitos influyen en tu descanso y bienestar.
+          </h1>
+          <p class="lead">
+            Un test para entender tu descanso en la era digital. Tus respuestas
+            se analizan de forma anónima y ayudan a mejorar la comprensión del
+            bienestar.
+          </p>
+          <li><a class="btn-outline" href="./test.html">Realizar el test</a></li>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="que-es" class="container sections">
+      <div class="row align-items-center g-5">
+        <!-- IMAGEN A LA IZQUIERDA -->
+        <div class="col-md-6">
+          <img class="fondo-2" src="../images/fondo-2.jpg" alt="fondo-2" />
+        </div>
+
+        <!-- TEXTO A LA DERECHA -->
+        <div class="col-md-6">
+          <article class="glass">
+            <h4>
+              ¿Sabías que tus hábitos digitales pueden estar influyendo en la
+              calidad de tu descanso y tu bienestar mental?
+            </h4>
+            <p>
+              A través de tus respuestas, podrás descubrir cómo tus rutinas
+              influyen en tu descanso y comparación con promedios generales. Tus
+              datos son analizados de forma anónima y confidencial para
+              comprender mejor el bienestar en la era digital.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="section3 mt-5 row align-items-center g-5">
+       
+        <div class="col-md-6">
+          <article class="glass">
+            <p>
+              El Test de Bienestar del Sueño forma parte del estudio “Screen
+              Time vs. Mental Wellness Survey 2025” , cuyo objetivo es explorar
+              cómo el uso de pantallas, las horas de sueño, el ejercicio, el
+              trabajo y la vida social se relacionan con nuestra salud mental.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <img class="fondo-3" src="../images/fondo-3.jpg" alt="fondo-3" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            © 2025 Dormitest. Proyecto de análisis sobre el bienestar del sueño
+            y los hábitos digitales. Todos los derechos reservados.
+          </p>
+      </div>
+    </footer>
+
+    <!-- Script demo: captura del mini test -->
+    <script>
+      document
+        .getElementById("miniTest")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const val = this.querySelector("input").value;
+          alert("Valor enviado: " + val + " (demo)");
+        });
+    </script>
+  </body>
+</html>
